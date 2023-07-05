@@ -1,0 +1,256 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Muli;
+	
+}
+
+body{
+	color:#fff;
+	background: #081b29;
+}
+
+.header{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	padding: 10px 5%;
+	background: #081b29;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.logo{
+	position: relative;
+	font-size: 50 px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 600;
+}
+.logo a{
+	color: #ededed;
+}
+	
+
+.logo::before{
+	content: '';
+	position: absolute;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background: #081b29;
+	animation: showRight 1s ease forwards;
+	animation-delay: 3s;
+	text-decoration: none;
+}
+
+.navbar a{
+	display: inline-block;
+	font-size: 13px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+	transition: .3s;
+	margin-left: 70px;
+	
+}
+
+.navbar a:hover,
+.navbar a.active {
+	color: #0ef;
+}
+
+.home{
+	height: 100vh;
+	background: url('images/dodo.png') no-repeat;
+	background-size:cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	padding: 0 10%;
+}
+
+.home-content{
+	max-width: 600px;
+	background: transparent;
+}
+
+.home-content h1{
+	font-size: 4vw;
+	font-weight: 700;
+	line-height: 1.2;
+	font-family: Muli;
+	color: white;
+	background: transparent;
+
+}
+
+.home-content h1::before{
+	content: '';
+	position: absolute;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background: #081b29;
+	animation: showRight 1s ease forwards;
+	animation-delay: 4s;
+}
+
+.home-content h3{
+	font-size: 32px;
+	font-weight: 700;
+	color: #00abf0;
+	font-family: Muli;
+	}
+	
+.home-content h3 span{
+	color: #00abf0;
+}
+	
+	.home-content p{
+		font-size: 15px;
+		margin: 7px 0 20px;
+		font-family: Muli;
+		color: white;
+	}
+.home-content .btn-box{
+width: 310px;
+height: 50px;
+display: flex;
+justify-content: space-between;
+color: #00abf0 ;
+
+}
+
+.btn-box a{
+	position: relative;
+display: inline-flex;
+justify-content:center;
+align-items: center;
+width: 150px;
+height: 100%;
+background: #00abf0;
+border: 2px solid #00abf0;
+border-radius: 8px;
+font-size: 19px;
+color: #081b29;
+text-decoration: none;
+font-weight: 600;
+letter-spacing: 1px;
+overflow: hidden;
+}
+
+.btn-box a:nth-child(2){
+	background: transparent;
+	color: #00abf0;
+}
+
+.btn-box a:nth-child(2)::before{
+	 background: transparent;
+	color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover{
+	background: #00abf0;
+	transition: .8s;
+}
+
+.btn-box a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #00abf0; 
+	z-index: -1;
+	transition: .5s;
+	color:#00abf0;
+	
+}
+
+.btn-box a:hover::before{
+width: 100%;
+}
+
+.home-sci{
+	position:absolute;
+	bottom: 40px;
+	width: 170px;
+	display: flex;
+	justify-content: space-between;
+	color: #00abf0;	
+}
+
+.home-sci a{
+	position: relative;
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid #00abf0;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #00abf0;
+	text-decoration: none;
+	overflow: hidden;
+
+}
+
+.home-sci a::before{
+	content:'';
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 0%;
+	height: 100%;
+	background: #00abf0;
+	z-index:1;
+}
+
+.home-sci a:hover::before{
+	width: 100%;
+}
+
+.home-imgHover{
+position: absolute;
+top: 0;
+right: 30px;
+width: 500px;
+height: 100%;
+background: transparent;
+transition: 3s;
+}
+
+.home-imgHover:hover{
+	background: #081b29;
+	opacity: .8;
+}
+
+@keyframes showRight{
+	100%{
+		width: 0;
+	}
+
+
+
+
+
+
+
+
+ 	
+
+
+
+
+
